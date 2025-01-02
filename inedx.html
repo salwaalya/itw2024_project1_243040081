@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stayle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Portofolio Salwa</h1>
+        <nav>
+            <a href="#conten1">Home</a>
+            <a href="#conten2">About Me</a>
+            <a href="#conten3">sklis</a>
+            <a href="#conten4">Contact</a>
+        </nav>
+
+        <!-- toggel -->
+      <div class="togel">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        
+        <ul class="menu2">
+            <li><a href="#conten1">Home</a></li>
+             <li><a href="#conten2">About Me</a></li>
+             <li><a href="#conten3">sklis</a></li>
+             <li><a href="#conten4">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</header>
+    <!-- akhir navbar -->
+    <!-- akhir header -->
+    
+
+<!-- halaman1 -->
+    <section class="hero" id="conten1">
+        <div class="hero-text">
+            <h2>Portofolio Salwa</h2>
+            <p>Halo! Nama Saya Salwa Alya Mahasiswi dari Universitas Pasundan jurusa Teknik Informatika dan Saya berasal dari Kota Bandung  </p>
+            <button>Explore Projects</button>
+        </div>
+        <img src="img/profil.PNG" alt="profil">
+    </section>
+    <!-- akhir halaman1 -->
+
+    <!-- halaman2 -->
+     <div class="halaman2" id="conten2">
+        <h1>about me</h1>
+        <div class="halaman2-conten">
+            <div class="halaman2-conten1">
+              <p>Perkenalkan nama saya Salwa Alya seorang mahasiswa baru di Universitas Pasundan, Fakultas Teknik, dengan program studi Informatika. Saya memiliki minat yang kuat dalam bidang teknologi dan pemrograman, serta berkomitmen untuk mengembangkan keterampilan saya di bidang ini melalui pendidikan dan praktik.Saya lahir pada tanggal 21 Juni 2006 dan saya tinggal di Kota Bandung. Lalu saya memiliki hobi berolahraga.</p>
+            </div>
+            <div class="halaman2-conten1">
+                <p>Saya lulusan dari sekolah dasar 208 Luginasari Sukagalih, Sekolah Menengah Pertama 26 Bandung, dan Sekolah menengah atas 15 Bandung. Selain Itu saya memiliki pengalaman mengikuti cabang olahraga Softball dan mengikuti perlombaan Softball "Juara 1 Softball RED FOX National Championship tahun 2022", "Juara 1 Softball PORTUE Bandung Championship tahun 2023", dan "Juara 2 Softball KEJURDA Piala Gubernur Jawa Barat tahun 2022"
+
+                </p>
+            </div>
+        </div>
+     </div>
+
+    <!-- halaman3 -->
+    <div class="halaman3" id="conten3">
+        <h1>skill</h1>
+        <ul>
+            <li><i class='bx bxl-html5'></i></li>
+            <li><i class='bx bxl-css3' ></i></li>
+            <li><i class='bx bxl-javascript' ></i></li>
+        </ul>
+      </div>
+   <!-- alhir halaman3 -->
+
+   <div class="halaman4" id="conten4">
+    <div class="halaman4-conten">
+    <h2>Contact Me</h2>
+    <form action="#" name='wpu-contact-form' method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" name="submit">Send Message</button>
+    </form>
+</div>
+</div>
+
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbyI3zEH58Xl--pH6KBJF2UFsgfc4h_hQNvz3aL-A1UOhY1jVQFYUY1pXAECcY2z8BCtyw/exec>'
+    const form = document.forms['wpu-contact-form']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
